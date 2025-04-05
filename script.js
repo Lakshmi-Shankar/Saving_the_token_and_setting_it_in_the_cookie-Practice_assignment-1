@@ -37,6 +37,7 @@ const decrypt = (token) => {
   // Step 3: Verify and decode JWT
   const payload = jwt.verify(decrypted, SK);
   console.log("Decrypted Payload:", payload);
+  console.log("Success")
   return payload;
 };
 
